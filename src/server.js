@@ -12,5 +12,7 @@ app.listen(port, () => {
   } catch (error) {
     console.log(error);
     process.exit(1);
+    console.log("massage");
+    
   }
 });
