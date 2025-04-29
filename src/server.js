@@ -8,7 +8,7 @@ database.sync();
 app.listen(PORT, () => {
   try {
     connectionDb();
-    console.log(`Server stated on port ${port}`);
+    console.log(`Server stated on port ${PORT}`);
   } catch (error) {
     console.log(error);
     process.exit(1);
