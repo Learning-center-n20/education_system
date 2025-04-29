@@ -1,7 +1,7 @@
 import app from "./app.js";
 import { connectionDb, database } from "./config/db.js";
 
-const port = process.env.PORT || 5050;
+const PORT = process.env.PORT || 5050;
 
 database.sync();
 
