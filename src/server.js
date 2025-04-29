@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5050;
 
 database.sync();
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   try {
     connectionDb();
     console.log(`Server stated on port ${port}`);
