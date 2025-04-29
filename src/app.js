@@ -6,6 +6,6 @@ const app = e();
 
 app.use(e.json());
 
-app.use("/admin", adminRouter);
+app.use("/api", adminRouter);
 
 export default app;

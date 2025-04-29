@@ -26,6 +26,11 @@ export const Admin = database.define(
         len: [5, 30],
       },
     },
+    role: {
+      type: DataTypes.ENUM("superadmin", "admin", "student"),
+      allowNull: false,
+      defaultValue: "student",
+    },
   },
   {
     underscored: true,

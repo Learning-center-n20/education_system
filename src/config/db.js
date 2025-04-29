@@ -8,6 +8,7 @@ export const database = new Sequelize({
   password: vars.DB_PASSWORD,
   username: vars.DB_USERNAME,
   dialect: vars.DB_DIALECT,
+  logging: false
 });
 
 export const connectionDb = () => {

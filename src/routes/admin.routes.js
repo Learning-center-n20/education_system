@@ -5,6 +5,7 @@ const router = Router();
 
 const controller = new AdminController();
 
-router.post("/", controller.createAdmin);
+router.post('/register', controller.createAdmin);
+router.post('/login',controller.login.bind(controller))
 
 export { router as adminRouter };
